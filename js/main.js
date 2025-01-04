@@ -121,3 +121,20 @@
 
 })(jQuery);
 
+document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+    const faqItem = question.parentElement;
+    const isActive = faqItem.classList.contains('active');
+
+    // Fecha todas as respostas abertas
+    document.querySelectorAll('.faq-item.active').forEach(item => {
+      item.classList.remove('active');
+    });
+
+    // Abre/fecha a resposta atual
+    if (!isActive) {
+      faqItem.classList.add('active');
+    }
+  });
+});
+
