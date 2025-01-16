@@ -984,89 +984,91 @@ h6 {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-#team .row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 -15px;
-}
-
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-  position: relative;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-#team .member .member-info {
-  opacity: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+#team .row {
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
+  flex-wrap: wrap;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
+  margin: 0 -15px;
+}
+
+#team .member-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+#team .member-card:hover {
+  transform: translateY(-5px);
+}
+
+#team .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: 0.2s;
+  justify-content: center;
+  margin: 0 auto 15px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-#team .member .member-info-content {
-  margin-top: 50px;
-  transition: margin 0.2s;
-}
-
-#team .member:hover .member-info {
-  background: #252525;
-  opacity: 1;
-  transition: 0.4s;
-}
-
-#team .member:hover .member-info-content {
-  margin-top: 0;
-  transition: margin 0.4s;
-}
-
-#team .member h4 {
+#team .member-details h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
   font-weight: 500;
-  margin-bottom: 2px;
-  font-size: 12px;
-  color: #fff;
 }
 
-#team .member span {
-  font-style: italic;
+#team .role {
   display: block;
-  font-size: 13px;
-  color: #fff;
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+  font-style: italic;
 }
 
-#team .member .social {
+#team .social {
   margin-top: 15px;
 }
 
-#team .member .social a {
-  transition: none;
-  color: #fff;
+#team .social-link {
+  color: #666;
+  margin: 0 8px;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 
-#team .member .social a:hover {
+#team .social-link:hover {
   color: #006aff;
 }
 
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
+#team .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#team .section-header h3 {
+  font-size: 32px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+#team .section-header p {
+  font-size: 16px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* Clients Section
